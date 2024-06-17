@@ -1,0 +1,1193 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 4.5rem;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ---- Buttons ---- */
+
+button {
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.transparent-btn {
+  display: flex;
+  position: relative;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.plan-btn {
+  width: 15rem;
+  height: 2.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+@media (hover: hover) {
+  button:hover {
+    cursor: pointer;
+  }
+
+  .transparent-btn:hover span {
+    text-decoration: underline;
+  }
+}
+
+img {
+  display: block;
+}
+/* -------------------------------- Header -------------------------------- */
+
+header {
+  position: fixed;
+  background-color: white;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.header {
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 10.625rem;
+}
+
+@media (hover: hover) {
+  .ham-icon:hover {
+    cursor: pointer;
+  }
+}
+
+.header-nav {
+  display: none;
+}
+
+.menu-open {
+  display: block;
+  background-color: white;
+  position: fixed;
+  text-align: center;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.overlay {
+  filter: brightness(0.4);
+}
+
+/* ----- Navigation Links ----- */
+
+.navigation-links {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.navigation-links li {
+  padding-bottom: 1.25rem;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+/* ----- Button ----- */
+
+.header button {
+  margin-top: 1.25rem;
+  width: 100%;
+  padding-block: 0.875rem;
+  color: #fff;
+  background-color: #000;
+  font-size: 0.9375rem;
+}
+
+@media (hover: hover) {
+  .header button:hover {
+    background-color: #dfdfdf;
+    color: #000;
+  }
+}
+
+/* -------------------------------- Home -------------------------------- */
+
+/* ------------------------------------- */
+/* -------- Home: Hero Section -------- */
+/* ----------------------------------- */
+
+.hero-item img {
+  width: 100%;
+}
+
+.hero-item-info {
+  padding-block: 4.5rem;
+  padding-inline: 2.0625rem 1.5rem;
+  background-color: #fff;
+}
+
+.hero-item-info h2 {
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.hero-item-info p {
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+.hero-btn span {
+  padding-right: 1.625rem;
+}
+
+.hero-btn img {
+  width: 2.625rem;
+}
+
+/* ----- First Hero Item ----- */
+
+.hero-item-accent .info-wrapper::before {
+  content: '';
+  width: 8rem;
+  height: 0.375rem;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(1deg, #ffc593 0%, #bc7198 43.29%, #5a77ff 83.33%);
+}
+
+.hero-item-accent .hero-item-info {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.hero-item-accent p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-item-accent .hero-btn {
+  color: #fff;
+}
+
+.hero-item-accent .hero-btn span {
+  padding-right: 1rem;
+}
+
+.hero-item-accent .hero-btn img {
+  filter: invert(1);
+}
+
+/* ---------------------------------------- */
+/* -------- Home: Stories Section -------- */
+/* -------------------------------------- */
+
+.home-stories-grid {
+  display: grid;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+}
+
+.grid-img {
+  filter: brightness(0.6) saturate(1.2);
+  width: 100%;
+}
+
+.grid-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-inline: 2rem;
+  color: #fff;
+}
+
+.grid-item-info h3 {
+  font-size: 1.125rem;
+  padding-bottom: 0.5rem;
+}
+
+.grid-item-info p {
+  font-size: 0.8125rem;
+  padding-bottom: 1rem;
+}
+
+.grid-item-info hr {
+  margin-bottom: 1.25rem;
+  opacity: 0.25;
+  border-top: none;
+}
+
+/* ----- Button ----- */
+
+.grid-item-info button {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.grid-item-info button img {
+  filter: invert(1);
+}
+
+/* ----------------------------------------- */
+/* -------- Home: Features Section -------- */
+/* --------------------------------------- */
+
+.home-features-section {
+  padding-block: 5rem;
+  margin: auto;
+  background-color: #fff;
+}
+
+.features-grid {
+  display: grid;
+  gap: 3.5rem;
+  text-align: center;
+  padding-inline: 2rem;
+  max-width: 28.5rem;
+  margin: auto;
+}
+
+.features-grid img {
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.home-features-section h3 {
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.home-features-section p {
+  font-size: 0.9375rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 25px;
+}
+
+/* -------------------------------- Stories -------------------------------- */
+
+/* ---------------------------------------- */
+/* -------- Stories: Hero Section -------- */
+/* -------------------------------------- */
+
+.stories-hero-section .hero-item-info {
+  padding: 3rem 1.75rem;
+}
+
+.stories-hero-section .info-wrapper:before {
+  content: none;
+}
+
+p.last-month {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+p.date {
+  font-size: 12px;
+}
+
+.date strong {
+  padding-left: 0.5rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+/* ----------------------------------------- */
+/* -------- Stories: Story Section -------- */
+/* --------------------------------------- */
+
+.grid-item-info .story-date {
+  padding-bottom: 0.2rem;
+}
+
+/* -------------------------------- Features -------------------------------- */
+
+/* ----------------------------------------- */
+/* -------- Features: Hero Section -------- */
+/* --------------------------------------- */
+
+.features-hero-section .hero-item-info {
+  padding-inline: 1.75rem;
+}
+
+/* -------------------------------------------- */
+/* -------- Features: Feature Section -------- */
+/* ------------------------------------------ */
+
+.features-feature-section {
+  padding-block: 4rem 5.75rem;
+}
+
+.features-feature-section h3 {
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+}
+
+.features-feature-section p {
+  font-size: 0.9375rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 25px;
+}
+
+/* ------------------------------------------- */
+/* -------- Features: Call to action -------- */
+/* ----------------------------------------- */
+
+.call-to-action {
+  position: relative;
+}
+
+.call-to-action img {
+  width: 100%;
+}
+
+.call-to-action-info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-inline: 1.9rem;
+  color: #fff;
+}
+
+.call-to-action::before {
+  content: '';
+  width: 8rem;
+  height: 0.375rem;
+  position: absolute;
+  top: 0;
+  left: 1.9rem;
+  background: linear-gradient(1deg, #ffc593 0%, #bc7198 43.29%, #5a77ff 83.33%);
+}
+
+.call-to-action-info h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 3.3px;
+  padding-bottom: 1.5rem;
+}
+
+/* ----- Button ----- */
+
+.call-to-action button span {
+  color: #fff;
+  padding-right: 1rem;
+}
+
+.call-to-action button img {
+  width: initial;
+  filter: invert(1);
+}
+
+/* ---------------------------------------- */
+/* -------- Pricing: Plan Section -------- */
+/* -------------------------------------- */
+
+.pricing-plans {
+  padding: 4rem 1.75rem;
+  text-align: center;
+}
+
+.plan-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 2.5rem;
+  max-width: 16rem;
+  margin: auto;
+}
+
+p#textMonthly {
+  font-weight: bold;
+}
+
+/* ----- Toggle Btn ----- */
+
+.toggle-btn {
+  width: 4rem;
+  height: 2rem;
+  position: relative;
+}
+
+.toggle-btn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-slider {
+  position: absolute;
+  inset: 0;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: 0.25s ease-in-out;
+}
+
+.checkbox-slider::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #000;
+  transition: 0.35s ease-in-out;
+}
+
+.toggle-btn input:checked + .checkbox-slider {
+  background-color: #000;
+}
+
+.toggle-btn input:checked + .checkbox-slider::before {
+  background-color: #fff;
+  transform: translateX(2rem);
+}
+
+/* ----- Pricing Options ----- */
+
+.plan-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 45.625rem;
+  margin: auto;
+}
+
+.plan-option {
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.price {
+  padding-bottom: 2.5rem;
+}
+
+.plan-info {
+  padding-block: 3rem 2.5rem;
+}
+
+.plan-info p {
+  max-width: 17.125rem;
+  margin: auto;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: rgba(0, 0, 0, 0.6);
+  padding-bottom: 2.5rem;
+}
+
+.plan-info h2 {
+  font-size: 2.5rem;
+  letter-spacing: 4.17px;
+}
+
+.plan-info h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1.125rem;
+}
+
+p.pricing-time-frame {
+  padding-bottom: 0;
+}
+
+/* ----- Second Plan Option ----- */
+
+.plan-accent {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.4s ease-out;
+}
+
+.plan-accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.375rem;
+  background: linear-gradient(1deg, #ffc593 0%, #bc7198 43.29%, #5a77ff 83.33%);
+}
+
+.plan-accent p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----- Button ----- */
+
+.plan-accent .plan-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (hover: hover) {
+  .plan-info .plan-btn:hover {
+    background-color: #dfdfdf;
+    color: #000;
+  }
+}
+
+/* -------------------------------------------- */
+/* -------- Pricing: Features Section -------- */
+/* ------------------------------------------ */
+
+.pricing-features-section {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 4rem;
+}
+
+h2.compare {
+  display: none;
+  opacity: 0;
+}
+
+.pricing-features-section h3 {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+
+.pricing-feature-item h3 {
+  padding-bottom: 1rem;
+}
+
+.pricing-features-section p {
+  font-size: 0.625rem;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 1.67px;
+}
+
+.pricing-feature-item p {
+  padding-bottom: 0.5rem;
+}
+
+.pricing-feature-wrapper {
+  padding-inline: 1.75rem;
+  max-width: 45.625rem;
+  margin: auto;
+}
+
+.feature-header {
+  border-bottom: 1px solid black;
+  padding-bottom: 1.375rem;
+}
+
+/* Hide for mobile */
+.feature-header-plans {
+  display: none;
+  opacity: 0;
+}
+
+.pricing-feature-item {
+  padding-top: 1.5rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.checkmark-group {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+/* -------------------------------- Footer -------------------------------- */
+
+footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer {
+  display: grid;
+  padding: 3.5rem 2rem;
+  justify-items: center;
+}
+
+.footer .logo {
+  padding-bottom: 2rem;
+}
+
+/* ----- Social Links ----- */
+
+.social-links-footer {
+  display: flex;
+  gap: 0.8125rem;
+  padding-bottom: 3rem;
+}
+
+.social-links-footer img {
+  filter: brightness(0) invert(1);
+}
+
+@media (hover: hover) {
+  .social-links-footer img:hover {
+    filter: none;
+  }
+
+  .navigation-links-footer li:hover {
+    opacity: 0.3;
+  }
+}
+
+.navigation-links-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 7.5rem;
+}
+
+.navigation-links-footer a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* ----- Button ----- */
+
+.footer button {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.footer button img {
+  filter: invert(1);
+}
+
+.footer p {
+  opacity: 0.5;
+  font-size: 0.9375rem;
+}
+/* -------------------------------- Media Queries -------------------------------- */
+
+@media screen and (min-width: 37.5rem) {
+  /* -------------------------------- */
+  /* -------- Home: 37.5rem -------- */
+  /* ------------------------------ */
+
+  .home-stories-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-item-accent .info-wrapper::before {
+    width: 0.375rem;
+    height: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .hero-item:nth-of-type(2) {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .hero-item:nth-of-type(1) .hero-item-info,
+  .hero-item:nth-of-type(3) .hero-item-info {
+    order: -1;
+  }
+
+  .hero-item-info {
+    display: flex;
+  }
+
+  .info-wrapper {
+    max-width: 24.25rem;
+    margin: auto;
+    /* position: relative; */
+  }
+
+  .info-wrapper p {
+    padding-bottom: 3rem;
+  }
+
+  .info-wrapper h2 {
+    padding-bottom: 1.25rem;
+  }
+
+  /* ----------------------------------- */
+  /* -------- Stories: 37.5rem -------- */
+  /* --------------------------------- */
+
+  .stories-hero-section .hero-item {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .stories-hero-section .hero-item-info {
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: clamp(2.5rem, -2.643rem + 10.714vw, 7rem);
+    padding: 0;
+    max-width: 24.25rem;
+  }
+
+  p.last-month {
+    padding-bottom: 1rem;
+  }
+
+  p.story-summary {
+    padding-bottom: 1.5rem;
+  }
+
+  .stories-hero-section .hero-item-info h2 {
+    line-height: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  p.date {
+    padding-bottom: 1.5rem;
+  }
+
+  /* ------------------------------------ */
+  /* -------- Features: 37.5rem -------- */
+  /* ---------------------------------- */
+
+  /* ----- Features: Feature Section ----- */
+
+  .features-feature-section .features-grid {
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 2.5rem;
+    max-width: none;
+    align-items: baseline;
+  }
+
+  /*  ----- Features: Call to action ----- */
+
+  .call-to-action-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .call-to-action-info button {
+    align-items: center;
+    justify-self: end;
+  }
+
+  .call-to-action h2 {
+    font-size: 2.5rem;
+    letter-spacing: 4.17px;
+    line-height: 3rem;
+    max-width: 25rem;
+  }
+
+  .call-to-action::before {
+    content: '';
+    width: 0.375rem;
+    height: 100%;
+    left: 0;
+  }
+
+  /* ----------------------------------- */
+  /* -------- Pricing: 37.5rem -------- */
+  /* --------------------------------- */
+
+  /* ----- Pricing: Plan Section ----- */
+
+  .pricing-plans {
+    padding: 4rem 1.75rem;
+    text-align: center;
+  }
+
+  .plan-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2.5rem;
+  }
+
+  .plan-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.25rem;
+    padding: 2.5rem;
+    padding-right: 3rem;
+    text-align: left;
+  }
+
+  .plan-info p {
+    max-width: none;
+    padding-bottom: 2rem;
+  }
+
+  .plan-btn {
+    width: 100%;
+  }
+
+  .price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    text-align: right;
+    padding: 0;
+  }
+
+  /* ----- Pricing: Plan Options ----- */
+
+  .plan-option {
+    padding: 0;
+  }
+
+  .plan-accent::before {
+    top: 0;
+    left: 0;
+    width: 0.375rem;
+    height: 100%;
+  }
+
+  /* ----- Pricing: Features ----- */
+
+  .pricing-features-section h3 {
+    width: 50%;
+    padding-left: 1.5rem;
+  }
+
+  .pricing-features-section p {
+    color: #000;
+  }
+
+  .feature-header-plans {
+    opacity: 1;
+  }
+
+  .pricing-feature-item,
+  .feature-header,
+  .feature-header-plans {
+    display: flex;
+  }
+
+  .checkmark-item p {
+    display: none;
+  }
+
+  .feature-header-plans,
+  .checkmark-group {
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 3.875rem;
+  }
+
+  /* Extra padding to make checkmarks equal width */
+  .pricing-feature-item:nth-of-type(2)
+    .checkmark-group
+    .checkmark-item:last-of-type,
+  .pricing-feature-item:nth-of-type(3)
+    .checkmark-group
+    .checkmark-item:last-of-type {
+    padding-left: 0.9375rem;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  /* -------------------------------- */
+  /* -------- Header: 48rem -------- */
+  /* ------------------------------ */
+
+  header {
+    position: absolute;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 69.5rem;
+    margin: auto;
+    padding: 1rem 2.5rem;
+  }
+
+  .ham-icon {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav button {
+    margin: 0;
+    font-size: 0.75rem;
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+  /* ----- Header: Navigation Links ----- */
+
+  .navigation-links {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.2rem;
+  }
+
+  .navigation-links li {
+    padding: 0;
+    font-size: 0.75rem;
+  }
+
+  @media (hover: hover) {
+    .navigation-links li:hover {
+      opacity: 0.4;
+    }
+  }
+
+  /* ------------------------------ */
+  /* -------- Hero: 48rem -------- */
+  /* ---------------------------- */
+
+  .hero-item-info h2 {
+    font-size: 2.5rem;
+    letter-spacing: 4.17px;
+  }
+
+  /* --------------------------------- */
+  /* -------- Stories: 48rem -------- */
+  /* ------------------------------- */
+
+  .stories-hero-section .hero-item-info {
+    padding: 0;
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* -------------------------------- */
+  /* -------- Footer: 48rem -------- */
+  /* ------------------------------ */
+
+  .footer * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer {
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 3.675rem 2.5rem;
+  }
+
+  .footer .logo {
+    grid-column: 1 / 2;
+  }
+
+  .footer button {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+  }
+
+  /* ----- Footer: Links ----- */
+
+  .social-links-footer {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: center;
+  }
+
+  .navigation-links-footer {
+    grid-column: 1 / 2;
+    flex-direction: row;
+  }
+
+  .footer p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: end;
+    align-self: center;
+  }
+
+  @media screen and (min-width: 72rem) {
+    /* ------------------------------ */
+    /* -------- Home: 72rem -------- */
+    /* ---------------------------- */
+
+    .hero-item {
+      grid-template-columns: 1fr 1.36fr;
+    }
+
+    .hero-item:nth-of-type(2) {
+      grid-template-columns: 1.36fr 1fr;
+    }
+
+    .home-stories-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: none;
+      justify-items: center;
+      align-items: baseline;
+    }
+
+    .features-grid div {
+      max-width: 21.875rem;
+    }
+
+    .features-grid:nth-child(2) img {
+      margin-bottom: 4rem;
+    }
+
+    /* --------------------------------- */
+    /* -------- Stories: 72rem -------- */
+    /* ------------------------------- */
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* ---------------------------------- */
+    /* -------- Features: 72rem -------- */
+    /* -------------------------------- */
+
+    .features-feature-section .features-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-inline: 4.5rem;
+    }
+
+    .call-to-action-info {
+      padding-inline: 4.5rem;
+    }
+
+    /* --------------------------------- */
+    /* -------- Pricing: 72rem -------- */
+    /* ------------------------------- */
+
+    .pricing-features-section {
+      padding-block: 6rem 10rem;
+    }
+
+    h2.compare {
+      display: block;
+      opacity: 1;
+      text-align: center;
+      padding-bottom: 3.5rem;
+      letter-spacing: 4.17px;
+      font-size: 2.5rem;
+    }
+
+    .plan-grid {
+      display: flex;
+      justify-content: center;
+      max-width: 69.375rem;
+    }
+
+    .plan-option {
+      max-height: fit-content;
+      align-self: baseline;
+      max-width: 21.875rem;
+    }
+
+    .plan-accent {
+      padding-block: 5.5rem 4.375rem;
+    }
+
+    .plan-accent::before {
+      width: 100%;
+      height: 0.375rem;
+    }
+
+    .plan-info {
+      display: block;
+      text-align: center;
+      padding-inline: 2.5rem;
+    }
+
+    .price {
+      text-align: center;
+    }
+
+    /* -------------------------------- */
+    /* -------- Footer: 72rem -------- */
+    /* ------------------------------ */
+
+    .footer {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 0.5fr 0.5fr 1fr;
+      justify-items: start;
+      padding-inline: 4.5rem;
+      margin: auto;
+    }
+
+    .navigation-links-footer {
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .social-links-footer {
+      grid-row: 2 / 3;
+      align-self: end;
+    }
+
+    .footer p,
+    .footer button {
+      grid-column: 3 / 4;
+    }
+
+    .footer p {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      align-self: end;
+    }
+
+    .footer .logo {
+      padding: 0;
+    }
+  }
+}
